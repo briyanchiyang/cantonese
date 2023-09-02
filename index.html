@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CantoClarity</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class ="flex-container">
+        <h1>CantoClarity</h1>
+        <h4 id="desc">Training a model using Meta's Wav2Vec2 to recognize mispronunciations in Cantonese</h4>
+        <h3>Demo</h3>
+        <button class = "btn">Click to speak! &#128264;</button>
+
+
+        <h3>Motivation</h3>
+
+        <h3>Methodology</h3>
+        <p>My end goal was to create a model that, when given a recording of a Cantonese speaker, would be able to
+            identify which phonemes were mispronounced. I trained a model to recognize Cantonese phonemes from an audio file, and
+            reasoned that phonemes where the model had low confidence in its prediction were likely to be mispronounced.<br><br>
+
+            The model was fine-tuned from a pretrained XLSR-53 Wav2Vec2 model, which is a state-of-the-art speech recognition software
+            by Meta.<br><br>
+
+            Notably, the XLSR-53 version of the Wav2Vec2 model was trained for zero-shot cross-lingual phoneme recognition. In English,
+            this means that the model was trained to recognize phonemes for completely new languages that were not in its training dataset.
+            This is possible because there are many phonemes shared by languages -- for example, the "a" sound in "apple" isn't only shared by
+            English, it's shared by many other languages.
+            
+            <br><br>
+
+            140 hours of Hong Kong Cantonese speech to recognize phonemes from audio 
+        </p>
+    </div>
+    <script src="app.js"></script>
+    <noscript>Sorry! JavaScript needs to be enabled to view the full site.</noscript>
+</body>
+</html>
