@@ -9,6 +9,9 @@ but have always wondered if there was a way to use coding to improve my pronunci
 it's obviously imperfect (there are many other factors that affect pronunciation), it's a start. I
 use this as a tool to improve my own pronunciation, and hope others to do the same.
 
+## Sample Results
+<img src="demo.png" alt="Demo image" width=50%/>
+
 ## Installation
 Clone the repo by the following:
 ```
@@ -39,9 +42,9 @@ With phoneme predictions also comes probabilities associated with those predicti
 
 1. If you do not say the correct phoneme (if the model expects you to say a phoneme and you don't), that is labeled as a mispronunciation and is shown as red.
 
-2. If you do say the correct phoneme, the model calculates its confidence in that phoneme based on the average probabilities of the next five likelist phonemes (shown below as `next_five_avg`). If the phoneme you said has a far greater probability than everything else (shown below as `correct_phoneme`), your pronunciation is probably good. If the probabilities are all close, you probably can work on your pronunciation. In practice, I use the following equation:
+2. If you do say the correct phoneme, the model calculates its confidence in that phoneme based on the average probabilities of the next five likelist phonemes (shown below as `next five avg`). If the phoneme you said has a far greater probability than everything else (shown below as `correct phoneme`), your pronunciation is probably good. If the probabilities are all close, you probably can work on your pronunciation. In practice, I use the following equation:
 
-$$ accuracy = 1 - (next_five_avg / correct_phoneme) $$
+$$ \text{accuracy} = 1 - (\text{next five avg} / \text{correct phoneme}) $$
 
 After calculating the accuracies for each phoneme, I then display that information on the webapp.
 
