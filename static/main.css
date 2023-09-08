@@ -1,0 +1,83 @@
+* {
+    font-family: 'Avenir';
+    padding: 0;
+    margin: 0%;
+    /*color: red;*/
+}
+
+/* Main flexbox specifications */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /*border: 2px solid black;*/
+    margin: auto;
+
+    padding-top: 40px;
+}
+
+#side-by-side {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0%;
+    font-size: 2.5rem;
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+#desc {
+    margin: 0%;
+    font-style: italic;
+}
+
+#cantonese {
+    font-size: 2.5rem;
+    padding-left: 30px;
+}
+
+.red {
+    color: red;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background-color: crimson;
+    padding: 20px 32px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 20%;
+}
+
+form {
+    padding-top: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+}
+
+#table_1 {
+    height: 100%
+}
+
+tr.spaceUnder>td {
+    padding-bottom: 1em;
+}
+
+.btn:hover {
+    /*background-color: CornflowerBlue;*/
+    transition-duration:1s;
+    cursor: pointer;
+}
