@@ -45,8 +45,6 @@ def probability_analysis(ground_ids, input_ids, logits):
 
     # If match is found, we are done. Move to next ground_id
     if ground_phonemes[ground_pointer].id == input_ids[input_pointer]:
-      # if abs(ground_pointer - input_pointer) < 4: # ids should be close to each other
-      # if nonzero_entries < 8: # ids should be close to each other
 
       ground_phonemes[ground_pointer].corresponding_id = past_id = input_pointer
 
@@ -85,13 +83,11 @@ print("Starting")
 # Render form
 @APP.route('/')
 def index():
-  print("eeeeeeef")
   return flask.render_template('index.html')
 
 
 @APP.route('/result', methods = ["POST", "GET"])
 def result():
-  print('hello buddy')
   return flask.render_template('index.html', name = "ffffff")
 
 
@@ -141,14 +137,6 @@ def handle_post():
     ground_phonemes = "n ei5 ɡ iuɜ m e1 m inɡ4 aa1"
     input_phonemes = input_phonemes.replace("|", " ")
 
-    bob = "<span style='color: #00ccff;'>Hello world</span>"
-
-    # Results
-    results = '''
-                hey
-              '''
-
-    #return flask.render_template('index.html', ground_phonemes = ground_phonemes, input_phonemes = input_phonemes, results = results)
 
     return flask.render_template('index.html', ground_phonemes = ground_phonemes, input_phonemes = input_phonemes, analysis = analysis)
 
