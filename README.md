@@ -9,14 +9,6 @@ but have always wondered if there was a way to use coding to improve my pronunci
 it's obviously imperfect (there are many other factors that affect pronunciation), it's a start. I
 use this as a tool to improve my own pronunciation, and hope others to do the same.
 
-## Sample Results
-Below is a video of me explaining my project and doing a demo. There's sound, so make sure to unmute. Enjoy!
-
-https://github.com/briyanchiyang/cantonese/assets/96768174/972152b1-21c0-4760-bdc2-ca1e0f465215
-
-
-
-
 ## Installation
 Clone the repo by the following:
 ```
